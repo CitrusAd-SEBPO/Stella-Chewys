@@ -1,0 +1,371 @@
+/* font face add */
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+@font-face {
+  font-family: PetcoCircularTT-Regular;
+  src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: PetcoCircularTT-Bold;
+  src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(/assets/fonts/PetcoCircularTT-Bold.woff) format("woff");
+}
+
+/* default css */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+/* common styling */
+.citrusStella_desktop__hide {
+  display: none;
+}
+.citrusStella_mobile__hide {
+  display: block;
+}
+.citrusStella__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.citrusStella__wrapper a {
+  text-decoration: none;
+}
+.citrusStella__sectionTitle {
+  margin: 0;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+}
+.citrusStella__wrapper img {
+  max-width: 100%;
+}
+
+/* POV style */
+#citrusStella__hero1,
+#citrusStella__hero2,
+#citrusStella__hero3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  border: 1px solid rgba(102, 51, 153, 0);
+  display: grid;
+  align-items: center;
+}
+#citrusStella__hero1 {
+  background-image: url(https://assets.petco.com/petco/image/upload/f_auto,q_auto/stella-chews-POV-Desktop.png);
+}
+#citrusStella__hero2 {
+  background-image: url(New-img/stella-chews-POV02-Desktop.png);
+}
+#citrusStella__hero3 {
+  background-image: url(New-img/stella-chews-POV03-Desktop.png);
+}
+.citrusStella__heroRow {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.citrusStella__heroTitle h1 {
+  margin: 0 0 18px 0;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #c01823;
+}
+.citrusStella__heroTitle button,
+#citrusStella__RawFood button,
+.citrusStella__footerTextContainer button,
+.citrusStella--productCommonCTA button {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #001952;
+  border: none;
+  border-radius: 5px;
+  padding: 22px 60px 18px;
+  cursor: pointer;
+}
+.citrusStella--productCommonCTA {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* raw food */
+#citrusStella__RawFood {
+  margin-top: 50px;
+  text-align: center;
+}
+.citrusStella__RawFoodContainer {
+  width: 1384px;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 40px;
+  overflow: auto;
+  text-align: center;
+}
+.citrusStella__category {
+  width: 1384px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  text-align: center;
+}
+.citrusStella__card {
+  width: 204px;
+  text-align: center;
+}
+.citrusStella__card-title h3 {
+  margin: 20px 0;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+/* Embed video area */
+.citrusStella__embedVideo {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.citrusStella__embedContainer {
+  width: 1100px;
+  max-width: 95%;
+  margin: auto;
+  padding-top: 40px;
+}
+.citrusStella__embedRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+.citrusStella__embedCard {
+  background-color: rgba(192, 24, 35, 0.15);
+  text-align: center;
+  padding-bottom: 30px;
+  display: grid;
+  flex-direction: column;
+}
+.citrusStella__embedCard .iframe iframe {
+  width: 100%;
+  height: 315px;
+}
+.citrusStella__cardBody h3 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  margin: 40px 0 20px;
+}
+.citrusStella__cardBody p {
+  font-family: "PetcoCircularTT-regular", arial !important;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+/*----------------------------------- responsive styling------------------------------------- */
+
+@media all and (min-width: 1441px) {
+  .citrusStella__RawFoodContainer {
+    width: 1384px;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1201px) and (max-width: 1350px) {
+  #citrusStella__hero1 .logo,
+  #citrusStella__hero2 .logo,
+  #citrusStella__hero3 .logo {
+    width: 270px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+  .citrusStella_desktop__hide {
+    display: block;
+  }
+  .citrusStella__heroTitle h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    line-height: 30px;
+  }
+  #citrusStella__hero1 .logo,
+  #citrusStella__hero2 .logo,
+  #citrusStella__hero3 .logo {
+    width: 180px;
+  }
+  #citrusStella__hero3 .logo {
+    margin-top: -20%;
+    padding-right: 0%;
+  }
+  #citrusStella__hero2 .logo {
+    margin-top: -19%;
+    padding-right: 0%;
+  }
+  .citrusStella__sectionTitle.citrusStella_desktop__hide {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .citrusStella_desktop__hide {
+    display: block;
+  }
+  .citrusStella_mobile__hide {
+    display: none;
+  }
+  /* pov style */
+  #citrusStella__hero1 {
+    background-image: url(New-img/stella-chews-POV-Mobile.png);
+    background-position: 0;
+  }
+  #citrusStella__hero2 {
+    background-image: url(New-img/stella-chews-POV02-Mobile.png);
+  }
+  #citrusStella__hero3 {
+    background-image: url(New-img/stella-chews-POV03-Mobile.png);
+  }
+  .citrusStella__heroRow {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  #citrusStella__hero2 .citrusStella__heroTitle h1,
+  #citrusStella__hero3 .citrusStella__heroTitle h1 {
+    color: #c01823;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  #citrusStella__hero2 .citrusStella__heroTitle p,
+  #citrusStella__hero3 .citrusStella__heroTitle p {
+    color: #c01823;
+    font-size: 14px;
+  }
+  #citrusStella__hero1 .logo {
+    width: 200px;
+    position: relative;
+    top: -46px;
+  }
+  .citrusStella__heroTitle button,
+  #citrusStella__hero2 .citrusStella__heroTitle button,
+  #citrusStella__hero3 .citrusStella__heroTitle button,
+  #citrusStella__RawFood button,
+  .citrusStella__footerTextContainer button,
+  .citrusStella--productCommonCTA button {
+    font-size: 16px;
+    color: #001952;
+    text-transform: capitalize;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+  }
+  /* video section */
+  .citrusStella__embedContainer {
+    max-width: 100%;
+  }
+  .citrusStella__embedContainer {
+    padding-top: 0;
+    width: 700px;
+    overflow: auto;
+  }
+  .citrusStella__embedRow {
+    width: 624px;
+    margin: 0 20px;
+  }
+  .citrusStella__embedCard {
+    padding-bottom: 0;
+  }
+  .citrusStella__embedCard .iframe iframe {
+    height: 217px;
+  }
+  .citrusStella__cardBody p {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  /* video and text position swap */
+  .citrusStella__embedCard .iframe.order1 {
+    display: grid;
+    order: 2;
+  }
+  .citrusStella__embedCard .citrusStella__cardBody.order2 {
+    display: grid;
+    order: 1;
+  }
+  /* video section title */
+  .citrusStella__embedVideo > .citrusStella__sectionTitle {
+    display: none;
+  }
+  .citrusStella__sectionTitle.citrusStella_desktop__hide {
+    background-color: rgba(192, 24, 35, 0.63);
+    color: #fff;
+    font-size: 20px;
+    padding: 24px;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 768px) {
+}
+@media all and (max-width: 575px) {
+  .citrusStella__heroTitle h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    line-height: 26px;
+  }
+  #citrusStella__hero1 .logo {
+    width: 160px;
+    position: relative;
+    top: -60px;
+  }
+  #citrusStella__hero2 .logo img,
+  #citrusStella__hero3 .logo img {
+    width: 100%;
+    max-width: 194px;
+  }
+  .citrusStella__heroTitle {
+    width: 230px;
+    max-width: 100%;
+  }
+  #citrusStella__hero1 .citrusStella__heroTitle {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .citrusStella__heroTitle h1 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  #citrusStella__hero1.logo {
+    width: 145px;
+    position: relative;
+    top: -10px;
+  }
+}
