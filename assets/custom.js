@@ -322,22 +322,9 @@ function addActiveClass(element, activeClass) {
     });
   }
 }
-// ----------------------------------------------- need to update and delete below
-/* for (var i = 0; i < dogBestbtns.length; i++) {
-  dogBestbtns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("citrusStella__active_tab");
-    current[0].className = current[0].className.replace(
-      " citrusStella__active_tab",
-      ""
-    );
-    this.className += " citrusStella__active_tab";
-  });
-} */
-// ----------------------------------------------------------------need to update and remove above
 //for Dog best seller tab switcher
 // --------------------for hiding arrow-------------------------
 /* for hiding arrow set opacity 0 in style sheet
-        .cirtus_meet_tabs_22 .splide__arrow:disabled,
         .citrusStella-section__tab-content .splide__arrow:disabled {
           opacity: 0;
         }
