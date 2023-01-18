@@ -704,12 +704,6 @@ button {
     /* display: none; */
     padding: 0 20px 40px;
   }
-  .citrusStella__sectionTitle.citrusStella_desktop__hide {
-    background-color: rgba(192, 24, 35, 0.63);
-    color: #fff;
-    font-size: 20px;
-    padding: 24px;
-  }
 
   .citrusStella__sectionTitle {
     padding: 0 10px;
