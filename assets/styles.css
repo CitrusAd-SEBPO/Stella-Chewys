@@ -616,7 +616,7 @@ button {
   }
   /* pov style */
   #citrusStella__hero1 {
-    background-image: url(https://assets.petco.com/petco/image/upload/f_auto,q_auto/stella-chews-POV-Mobile.png);
+    background-image: url(New-img/stella-chews-POV-Mobile.png);
     background-position: 0;
   }
   #citrusStella__hero2 {
@@ -624,7 +624,7 @@ button {
     background-position-x: right;
   }
   #citrusStella__hero3 {
-    background-image: url(https://assets.petco.com/petco/image/upload/f_auto,q_auto/stella-chews-POV03-Mobile.png);
+    background-image: url(New-img/stella-chews-POV03-Mobile.png);
     background-position-x: right;
   }
   .citrusStella__heroRow {
@@ -760,8 +760,17 @@ button {
     max-width: 194px;
   }
   .citrusStella__heroTitle {
-    width: 230px;
+    width: 190px;
     max-width: 100%;
+  }
+  .citrusStella__heroTitle {
+            max-width: 190px;
+        }
+  .citrusStella_desktop__hide{
+      display: none;
+        }
+  #citrusStella__hero2 br{
+    display: none!important;
   }
 }
 
@@ -774,14 +783,5 @@ button {
     width: 145px;
     position: relative;
     top: -10px;
-  }
-  .citrusStella__heroTitle {
-            max-width: 190px;
-        }
-  .citrusStella_desktop__hide{
-      display: none;
-        }
-  #citrusStella__hero2 br{
-    display: none!important;
   }
 }
