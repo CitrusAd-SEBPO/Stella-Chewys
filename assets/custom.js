@@ -202,22 +202,23 @@ document.addEventListener("DOMContentLoaded", function () {
  * product scroller js ---
  --------------------------*/
 // tab carousal js
-var splides = document.querySelectorAll(".citrusStella__Products");
-if (splides.length) {
-  for (var i = 0; i < splides.length; i++) {
-    var splideElement = splides[i];
-    var splideDefaultOptions = {
-      rewind: true,
+// initialize product scroller
+advanceArrows("stella-dog-row-product");
+advanceArrows("stella-cat-row-product");
+function advanceArrows(idx) {
+  var splideElement = "#" + idx;
+  var splideDefaultOptions = {
       arrows: true,
       type: "slide",
-      focus: "left",
-      autoplay: false,
+      start:0,
+      focus: 0,
       pagination: false,
       rewindSpeed: 500,
       speed: 500,
       pauseOnHover: true,
       perPage: 6,
-      perMove: 2,
+      perMove: 1,
+      omitEnd: true,
       breakpoints: {
         375: {
           perPage: 1,
@@ -242,10 +243,11 @@ if (splides.length) {
         },
       },
     };
-
     new Splide(splideElement, splideDefaultOptions).mount();
-  }
+
 }
+
+
 /* ************************************************************************************** */
 //for tab sweater & loader added
 document.addEventListener("DOMContentLoaded", function () {
@@ -261,6 +263,7 @@ function filterDogProduct(c) {
     RemoveClass(x[i], "citrusTabShow");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], " citrusTabShow");
   }
+  advanceArrows(c);
 }
 // for cat filter function
 function filterCatProduct(c) {
@@ -271,6 +274,7 @@ function filterCatProduct(c) {
     RemoveClass(x[i], "citrusTabShow");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "citrusTabShow");
   }
+  advanceArrows(c);
 }
 function AddClass(element, name) {
   var i, arr1, arr2;
@@ -323,54 +327,3 @@ function addActiveClass(element, activeClass) {
   }
 }
 //for Dog best seller tab switcher
-// --------------------for hiding arrow-------------------------
-/* for hiding arrow set opacity 0 in style sheet
-        .citrusStella-section__tab-content .splide__arrow:disabled {
-          opacity: 0;
-        }
-        */
-arrowHide("splide01");
-arrowHide("splide02");
-arrowHide("splide03");
-arrowHide("splide04");
-arrowHide("splide05");
-arrowHide("splide06");
-arrowHide("splide07");
-arrowHide("splide08");
-arrowHide("splide09");
-arrowHide("splide10");
-arrowHide("splide11");
-arrowHide("splide12");
-function arrowHide(id) {
-  var splide = new Splide("#" + id, {
-    focus: "left",
-  });
-  splide.on("visible", function (slide) {
-    //hides right arrow if last slide visible
-    if (
-      slide.index === splide.length - 1 &&
-      splide.Components &&
-      splide.Components.Arrows &&
-      splide.Components.Arrows.arrows &&
-      splide.Components.Arrows.arrows.next
-    ) {
-      if (!splide.Components.Arrows.arrows.next.disabled) {
-        splide.Components.Arrows.arrows.next.disabled = true;
-      }
-    }
-    //hides left arrow if first slide visible
-    if (
-      slide.index === 0 &&
-      splide.Components &&
-      splide.Components.Arrows &&
-      splide.Components.Arrows.arrows &&
-      splide.Components.Arrows.arrows.prev
-    ) {
-      if (!splide.Components.Arrows.arrows.prev.disabled) {
-        splide.Components.Arrows.arrows.prev.disabled = true;
-      }
-    }
-  });
-
-  splide.mount();
-}
