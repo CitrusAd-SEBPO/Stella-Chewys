@@ -445,14 +445,14 @@ button {
 }
 /* raw food */
 #citrusStella__RawFood {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: center;
 }
 .citrusStella__RawFoodContainer {
   width: 1384px;
   max-width: 100%;
   margin: auto;
-  padding-top: 40px;
+  padding-top: 20px;
   overflow: auto;
   text-align: center;
 }
@@ -478,7 +478,7 @@ button {
 }
 /* Embed video area */
 .citrusStella__embedVideo {
-  margin-top: 100px;
+  margin-top: 5px;
   margin-bottom: 30px;
 }
 .citrusStella__embedContainer {
@@ -666,10 +666,13 @@ button {
   .citrusStella__tab-area {
     padding-bottom: 0;
   }
+  #citrusStella__RawFood {
+    margin-top: 20px;
+  }
   /* video section */
   .citrusStella__embedVideo {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .citrusStella__embedContainer {
     max-width: 100%;
@@ -764,13 +767,13 @@ button {
     max-width: 100%;
   }
   .citrusStella__heroTitle {
-            max-width: 190px;
-        }
-  .citrusStella_desktop__hide{
-      display: none;
-        }
-  #citrusStella__hero2 br{
-    display: none!important;
+    max-width: 190px;
+  }
+  .citrusStella_desktop__hide {
+    display: none;
+  }
+  #citrusStella__hero2 br {
+    display: none !important;
   }
 }
 
